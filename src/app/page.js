@@ -3,6 +3,7 @@ import { skillsData, socialLinks } from '@/components/Information';
 import { Inter } from 'next/font/google';
 import { SkillCard } from '@/components/SkillCard';
 import AgeDisplay from '@/components/AgeDisplay';
+import Projects from '@/components/Proyects';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'], display: 'swap' });
@@ -65,6 +66,8 @@ export default function Curriculum() {
 
       {/* Contenido */}
       <div className="text-container">
+      <Projects />
+
         <section className="skills-section" itemScope itemType="https://schema.org/ItemList">
           <h3>Habilidades Técnicas</h3>
           <div className="skills-grid">
@@ -90,10 +93,11 @@ export default function Curriculum() {
         <section className="profile-section">
           <h3>Perfil Profesional</h3>
           <p itemProp="description">
-            Estudiante de desarrollo de software con sólidos conocimientos en JavaScript, React y Node.js adquiridos a través de proyectos prácticos y formación académica. Actualmente ampliando mis habilidades en desarrollo Full Stack con Next.js. Comprometido con el aprendizaje continuo y la aplicación de buenas prácticas de programación para crear soluciones tecnológicas eficientes.
+            Estudiante de desarrollo de software con sólidos conocimientos en JavaScript, React y Node.js adquiridos a través de proyectos prácticos y formación académica. Actualmente ampliando mis habilidades en desarrollo web y software. Comprometido con el aprendizaje continuo y la aplicación de buenas prácticas de programación para crear soluciones tecnológicas eficientes.
           </p>
         </section>
       </div>
+      
     </main>
   );
 }
