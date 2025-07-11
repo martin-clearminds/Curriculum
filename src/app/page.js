@@ -11,6 +11,16 @@ const inter = Inter({ subsets: ['latin'], display: 'swap' });
 export default function Curriculum() {
   return (
     <main className={`${inter.className} curriculum-container`} itemScope itemType="https://schema.org/Person">
+      <div className="curriculum-header">
+        <button className="download-button">
+          <div className='content-btn-cv'>
+            <a href="/files/CVMARTIN.pdf" download="CV-Martin-Simbana.pdf" itemProp="url">
+              <Image src="/images/cv.svg" alt="Icono de descarga" width={24} height={24} />
+              <h4>Descargar CV</h4>
+            </a>
+          </div>
+        </button>
+      </div>
       {/* Enlaces sociales */}
       <div className="social-links">
         {socialLinks.map((link) => (
@@ -66,7 +76,7 @@ export default function Curriculum() {
 
       {/* Contenido */}
       <div className="text-container">
-      <Projects />
+        <Projects />
 
         <section className="skills-section" itemScope itemType="https://schema.org/ItemList">
           <h3>Habilidades Técnicas</h3>
@@ -97,7 +107,7 @@ export default function Curriculum() {
           </p>
         </section>
       </div>
-      
+
     </main>
   );
 }

@@ -165,7 +165,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
+  padding: .5rem;
   border-radius: 12px;
   transition: all 0.3s ease;
   background: rgba(255, 255, 255, 0.05);
@@ -465,7 +465,7 @@ h3::after {
   background: rgba(30, 41, 59, 0.6);
   backdrop-filter: blur(10px);
   border-radius: 16px;
-  padding: 1.5rem;
+  padding: 1rem;
   margin-bottom: 2rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -498,7 +498,7 @@ h3::after {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(5px);
   border-radius: 12px;
-  padding: 1.5rem;
+  padding: 1rem;
   transition: all 0.3s ease;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -512,7 +512,7 @@ h3::after {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 
 .project-title {
@@ -644,4 +644,52 @@ h3::after {
   .projects-grid {
       grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
+}
+.curriculum-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.curriculum-header button {
+  color: white;
+  border-width: 2px;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.curriculum-header a{
+  text-decoration: none;
+}
+.content-btn-cv a{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+.content-btn-cv{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.download-button {
+  background: rgb(79, 71, 153);
+  color: white;
+  border: none;
+  padding: 0;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 50%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
