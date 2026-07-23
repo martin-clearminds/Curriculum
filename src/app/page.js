@@ -43,6 +43,7 @@ export default function Curriculum() {
           <p className="hero-summary">Fullstack developer · web · móvil · cloud</p>
           <div className="hero-actions"><a className="primary-action" href="#proyectos">Explorar trabajo <span>↓</span></a><a className="text-action" href="mailto:martin.simbana007@gmail.com">Contactar <span>↗</span></a></div>
         </div>
+        
         <div className="portrait-stage" aria-label="Retrato de Martín Simbaña">
           <div className="orbit orbit-a" /><div className="orbit orbit-b" />
           <div className="portrait-frame"><Image src="/images/Yo.jpeg" alt="Martín Simbaña, desarrollador de software fullstack" fill priority sizes="(max-width: 800px) 78vw, 38vw" /></div>
